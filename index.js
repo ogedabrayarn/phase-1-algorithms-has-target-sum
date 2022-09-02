@@ -2,7 +2,7 @@ function hasTargetSum(array, target) {
   // Write your algorithm here
   for(let i = 0; i < array.length; i++){
     const pairSum = target - array[i]
-    for(let j = 0 ; j < array.length; j++){
+    for(let j = i+1 ; j < array.length; j++){
       if(array[j] === pairSum) return true;
     }
   }
